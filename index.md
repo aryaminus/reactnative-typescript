@@ -162,3 +162,11 @@ Couchbasing: [To the blog](https://blog.couchbase.com/getting-started-with-react
 Couchbase: [Github](https://github.com/couchbaselabs/react-native-couchbase-lite)... It worries me there has not been any activity for a while (being one of their products)
 Sample app: [thank you library for all](https://github.com/libraryforall/ebook-catalog-react-native)
 Pouching?: [Pouch sample](https://blog.yld.io/2016/07/05/building-a-offline-first-application-using-react-native-and-pouchdb/#.Wfux0BOCyRc)
+
+## 17. Getting an existing project reactively native
+
+After checking how the code is defined for objective C and given Swift is a much nicer code to work with... Is is possible to take an exisiting application (written in swift) and getting it to work with react-native?
+
+Let's find out!
+
+[Source code](./samples/17.swiftly/)
