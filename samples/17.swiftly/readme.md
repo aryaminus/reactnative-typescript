@@ -8,6 +8,7 @@ Run the following steps in a terminal (assuming you have already cocoapods insta
 
 ```sh
 $ yarn
+$ tsc
 $ cd ios
 $ pod install
 ```
@@ -15,7 +16,7 @@ $ pod install
 or the following if you don't want to copy three times...
 
 ```sh
-$ yarn && cd ios/ && pod install
+$ yarn && tsc && cd ios/ && pod install
 ```
 
 What it does is to set up your `node_modules` folder and install react-native pods.
