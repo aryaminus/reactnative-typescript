@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494AF76A2ED5CF559A005A1C /* Pods_swiftly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C6C8F73BE180A4F1A412BB /* Pods_swiftly.framework */; };
 		DC2252F81FB4184600165DEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2252F71FB4184600165DEA /* AppDelegate.swift */; };
 		DC2252FA1FB4184600165DEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2252F91FB4184600165DEA /* ViewController.swift */; };
 		DC2252FD1FB4184600165DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2252FB1FB4184600165DEA /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C6C8F73BE180A4F1A412BB /* Pods_swiftly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780BCB4B9017D13FCC75DA5A /* Pods-swiftly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftly.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftly/Pods-swiftly.release.xcconfig"; sourceTree = "<group>"; };
+		8083448D03704BD2D3FE902B /* Pods-swiftly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftly/Pods-swiftly.debug.xcconfig"; sourceTree = "<group>"; };
 		DC2252F41FB4184600165DEA /* swiftly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2252F71FB4184600165DEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2252F91FB4184600165DEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,18 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494AF76A2ED5CF559A005A1C /* Pods_swiftly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84088EA161AE1ABA5E10CC91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8083448D03704BD2D3FE902B /* Pods-swiftly.debug.xcconfig */,
+				780BCB4B9017D13FCC75DA5A /* Pods-swiftly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC2252EB1FB4184600165DEA = {
 			isa = PBXGroup;
 			children = (
 				DC2252F61FB4184600165DEA /* swiftly */,
 				DC2252F51FB4184600165DEA /* Products */,
 				DCC1DCA81FB422E600518A7E /* Frameworks */,
+				84088EA161AE1ABA5E10CC91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,7 @@
 		DCC1DCA81FB422E600518A7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16C6C8F73BE180A4F1A412BB /* Pods_swiftly.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,10 +100,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2253061FB4184600165DEA /* Build configuration list for PBXNativeTarget "swiftly" */;
 			buildPhases = (
+				A8FD95AC8A55675C0526F1B9 /* [CP] Check Pods Manifest.lock */,
 				DC2252F01FB4184600165DEA /* Sources */,
 				DC2252F11FB4184600165DEA /* Frameworks */,
 				DC2252F21FB4184600165DEA /* Resources */,
 				DCC1DCB51FB4250D00518A7E /* Bundle React Native code and images */,
+				EC787730B5389E9DF7A3D90F /* [CP] Embed Pods Frameworks */,
+				E617CA0ACB1EF05317613C54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +167,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A8FD95AC8A55675C0526F1B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DCC1DCB51FB4250D00518A7E /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +198,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		E617CA0ACB1EF05317613C54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftly/Pods-swiftly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC787730B5389E9DF7A3D90F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swiftly/Pods-swiftly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/GLog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftly/Pods-swiftly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -305,6 +383,7 @@
 		};
 		DC2253071FB4184600165DEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8083448D03704BD2D3FE902B /* Pods-swiftly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -323,6 +402,7 @@
 		};
 		DC2253081FB4184600165DEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780BCB4B9017D13FCC75DA5A /* Pods-swiftly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

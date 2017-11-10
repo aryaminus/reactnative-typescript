@@ -7,10 +7,10 @@
 		"test": "jest"
 	},
 	"dependencies": {
-		"@types/react": "^16.0.21",
+		"@types/react": "^16.0.22",
 		"@types/react-native": "^0.50.2",
-		"react": "16.0.0",
-		"react-native": "0.50.3"
+		"react": "^16.1.0",
+		"react-native": "^0.50.3"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
